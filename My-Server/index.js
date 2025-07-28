@@ -113,6 +113,6 @@ catch (error){
     res.status(400).json({message: error.message});
 }
 });
-app.listen(port,() =>{
+app.listen({port},() =>{
     console.log('server start on http://localhost:3001');
 });
