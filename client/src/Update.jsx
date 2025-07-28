@@ -11,7 +11,7 @@ function Update(){
     async function updateData(e){
         e.preventDefault();
     try {
-      const response = await axios.put(`http://localhost:3001/api/employee/${id}`,{
+      const response = await axios.put(`https://backend-fpn2.onrender.com/api/employee/${id}`,{
                 empNo,
                 empName,
                 empSal
