@@ -8,7 +8,7 @@ function Delete(){
     async function deleteOne(e){
      e.preventDefault();
     try {
-      const response = await axios.delete(`http://localhost:3001/api/employee/${id}`);
+      const response = await axios.delete(`https://backend-fpn2.onrender.com/api/employee/${id}`);
     alert("employee delete");
       
     } catch (err) {
