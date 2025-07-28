@@ -8,7 +8,7 @@ function FindAll(){
     async function Find(e) {
         e.preventDefault();
     try {
-      const response = await axios.get('http://localhost:3001/api/employee');
+      const response = await axios.get('https://backend-fpn2.onrender.com/api/employee');
       setEmployees(response.data);
     //   alert(JSON.stringify(response.data,null,2));
     } catch (err) {
