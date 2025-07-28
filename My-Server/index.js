@@ -6,9 +6,6 @@ const cors=require('cors');
 const app = express();
 
 
-app.listen(3001,() =>{
-    console.log('server start on http://localhost:3001');
-});
 
 //Middleware to parse JSON bodies
 app.use(express.json());
@@ -114,4 +111,7 @@ app.put('/api/employee/:id', async(req , res)=>{
 catch (error){
     res.status(400).json({message: error.message});
 }
+});
+app.listen(3001,() =>{
+    console.log('server start on http://localhost:3001');
 });
