@@ -12,7 +12,7 @@ import axios from 'axios';
     async function insert(e){
          e.preventDefault(); 
        try{
-        const response = await axios.post('https://backend-fpn2.onrender.com/api/employee',{empNo , empName , empSal});
+        const response = await axios.post('https://myproject-htwk.onrender.com/api/employee',{empNo , empName , empSal});
         //alert(JSON.stringify(response.data,null,2));
         alert("Employee Add");
 
