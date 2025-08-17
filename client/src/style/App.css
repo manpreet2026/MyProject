@@ -1,3 +1,4 @@
+/* Global Reset */
 body {
   font-family: Arial, sans-serif;
   background-color: #f4f4f4;
@@ -5,11 +6,13 @@ body {
   padding: 0;
 }
 
+/* General container styling */
 div {
   padding: 20px;
   text-align: center;
 }
 
+/* Main Heading */
 h1 {
   font-family: FrankRuehl, serif;
   font-size: 3rem;
@@ -28,17 +31,18 @@ h1 {
   transform: translateY(-50px);
 }
 
+/* Section Titles */
 h2 {
   color: #3a6a9e;
   margin-bottom: 20px;
   font-size: 30px;
   font-family: FrankRuehl, serif;
-
   animation: slideFromTop 1s ease-out forwards;
   opacity: 0;
   transform: translateY(-50px);
 }
 
+/* Button Styling */
 button {
   padding: 10px 20px;
   background-color: #ff4d4f;
@@ -56,26 +60,25 @@ button:hover {
   transform: scale(1.05);
 }
 
-/* Layout Containers */
+/* Remove big background boxes */
 .div1 {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  background-color: #f2f2f2;
-  margin-top: 20px;
+  display: block;
+  margin: 20px auto;
+  background-color: transparent;
+  height: auto;
+  padding: 0;
 }
 
 .div2 {
-  background-color: white;
-  padding: 30px 40px;
-  border-radius: 10px;
-  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  background-color: transparent;
+  padding: 0;
+  box-shadow: none;
+  border-radius: 0;
   text-align: center;
-  margin-bottom: 250px;
+  margin-bottom: 0;
 }
 
-/* Navigation */
+/* Navigation Bar */
 nav {
   margin-bottom: 30px;
   background-color: #282c34;
@@ -104,7 +107,7 @@ nav a:hover {
   background-color: #444;
 }
 
-/* Table Styling (optional if using tables) */
+/* Table Styling (if used) */
 table {
   width: 100%;
   border-collapse: collapse;
@@ -124,15 +127,13 @@ thead th {
   color: #163251;
 }
 
-/* Animations */
+/* Animation */
 @keyframes slideFromTop {
   to {
     opacity: 1;
     transform: translateY(0);
   }
 }
-
-/* Responsive Design */
 
 /* Tablet Devices (768px and below) */
 @media (max-width: 768px) {
@@ -182,14 +183,6 @@ thead th {
   }
 
   .div1 {
-    flex-direction: column;
-    height: auto;
     margin-top: 50px;
-  }
-
-  .div2 {
-    width: 90%;
-    padding: 20px;
-    margin-bottom: 100px;
   }
 }
